@@ -1,0 +1,91 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta name="viewport" content="width = 1050, user-scalable = yes" />
+<script type="text/javascript" src="5396f77366f55/turnjs4/extras/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="5396f77366f55/turnjs4/extras/modernizr.2.5.3.min.js"></script>
+</head>
+<body>
+
+<div class="flipbook-viewport">
+	<div class="container">
+		<div class="flipbook">
+	        <div style="background-image:url(5396f77366f55/turnjs4/samples/basic/pages/000.jpg)" class="hard"></div>
+			<div style="background-image:url(5396f77366f55/turnjs4/samples/basic/pages/001.jpg)" class="hard"></div>
+			<div style="background-image:url(5396f77366f55/turnjs4/samples/basic/pages/002.jpg)" class="hard"></div>
+			<div style="background-image:url(5396f77366f55/turnjs4/samples/basic/pages/003.jpg)" class="hard"></div>
+			<div style="background-image:url(5396f77366f55/turnjs4/samples/basic/pages/004.jpg)" class="hard"></div>
+			<div style="background-image:url(5396f77366f55/turnjs4/samples/basic/pages/005.jpg)" class="hard"></div>
+			<div style="background-image:url(5396f77366f55/turnjs4/samples/basic/pages/006.jpg)" class="hard"></div>
+			<div style="background-image:url(5396f77366f55/turnjs4/samples/basic/pages/007.jpg)" class="hard"></div>
+			<div style="background-image:url(5396f77366f55/turnjs4/samples/basic/pages/008.jpg)" class="hard"></div>
+			<div style="background-image:url(5396f77366f55/turnjs4/samples/basic/pages/009.jpg)" class="hard"></div>
+			<div style="background-image:url(5396f77366f55/turnjs4/samples/basic/pages/010.jpg)" class="hard"></div>
+			<div style="background-image:url(5396f77366f55/turnjs4/samples/basic/pages/011.jpg)" class="hard"></div>
+			<div style="background-image:url(5396f77366f55/turnjs4/samples/basic/pages/012.jpg)" class="hard"></div>
+			<div style="background-image:url(5396f77366f55/turnjs4/samples/basic/pages/013.jpg)" class="hard"></div>
+			<div style="background-image:url(5396f77366f55/turnjs4/samples/basic/pages/014.jpg)" class="hard"></div>
+			<div style="background-image:url(5396f77366f55/turnjs4/samples/basic/pages/015.jpg)" class="hard"></div>
+			<div style="background-image:url(5396f77366f55/turnjs4/samples/basic/pages/016.jpg)" class="hard"></div>
+			<div style="background-image:url(5396f77366f55/turnjs4/samples/basic/pages/017.jpg)" class="hard"></div>
+			<div style="background-image:url(5396f77366f55/turnjs4/samples/basic/pages/018.jpg)" class="hard"></div>
+			<div style="background-image:url(5396f77366f55/turnjs4/samples/basic/pages/019.jpg)" class="hard"></div>
+			<div style="background-image:url(5396f77366f55/turnjs4/samples/basic/pages/020.jpg)" class="hard"></div>
+			<div style="background-image:url(5396f77366f55/turnjs4/samples/basic/pages/021.jpg)" class="hard"></div>
+			<div style="background-image:url(5396f77366f55/turnjs4/samples/basic/pages/022.jpg)" class="hard"></div>
+			<div style="background-image:url(5396f77366f55/turnjs4/samples/basic/pages/023.jpg)" class="hard"></div>
+			<div style="background-image:url(5396f77366f55/turnjs4/samples/basic/pages/024.jpg)" class="hard"></div>			
+			<div style="background-image:url(5396f77366f55/turnjs4/samples/basic/pages/999.jpg)" class="hard"></div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+
+function loadApp() {
+
+	// Create the flipbook
+
+	$('.flipbook').turn({
+			// Width
+
+			width:1000,
+
+			// Height
+
+			height:500,
+
+			// Elevation
+
+			elevation: 50,
+
+			// Enable gradients
+
+			gradients: true,
+
+			// Auto center this flipbook
+
+			autoCenter: true
+
+	});
+}
+
+// Load the HTML4 version if there's not CSS transform
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['5396f77366f55/turnjs4/lib/turn.js'],
+	nope: ['5396f77366f55/turnjs4/lib/turn.html4.min.js'],
+	both: ['5396f77366f55/turnjs4/samples/basic/css/basic.css'],
+	complete: loadApp
+});
+
+</script>
+
+</body>
+</html>
